@@ -1,0 +1,11 @@
+class BaseLLMOutputParser<T> extends Serializable {
+}
+
+class "Runnable<Union[str, BaseMessage], T>" as Runnable {
+}
+
+class BaseGenerationOutputParser extends BaseLLMOutputParser, Runnable  {
+}
+
+class BaseOutputParser extends BaseLLMOutputParser, Runnable  {
+}
